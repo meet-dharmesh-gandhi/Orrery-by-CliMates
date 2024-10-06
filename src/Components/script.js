@@ -8,7 +8,7 @@ async function fetcher() {
     jsonFile = await result.json();
 }
 
-fetcher();
+await fetcher();
 
 const planetFile = [
     { e: 0.2056, i_deg: 7.0, q_au_1: 0.3075, p_yr: 0.241 }, // Mercury
