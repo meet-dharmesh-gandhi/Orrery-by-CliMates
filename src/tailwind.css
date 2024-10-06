@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'spacefont'; 
+    src: url('../nasalization-rg.otf') format('opentype');
+    font-weight: normal; 
+    font-style: normal; 
+  }
+  .neon-border {
+    border: 2px solid rgba(0, 183, 255, 0.8); /* Base border color */
+    box-shadow: 
+      0 0 10px rgba(0, 183, 255, 0.8),  /* Light blue outer glow */
+      0 0 10px rgba(0, 183, 255, 0.6),  /* Slightly darker glow */
+      0 0 20px rgba(0, 183, 255, 0.5),  /* Deeper neon glow */
+      0 0 20px rgba(0, 183, 255, 0.4);  /* Fading glow effect */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+  }
+  
