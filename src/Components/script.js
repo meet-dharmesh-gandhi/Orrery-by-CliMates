@@ -1,9 +1,11 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
+let result, jsonFile;
+
 async function fetcher() {
-    const result = await fetch("https://data.nasa.gov/resource/b67r-rgxc.json");
-    const jsonFile = await result.json();
+    result = await fetch("https://data.nasa.gov/resource/b67r-rgxc.json");
+    jsonFile = await result.json();
 }
 
 fetcher();
