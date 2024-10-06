@@ -1,8 +1,13 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-const result = await fetch("https://data.nasa.gov/resource/b67r-rgxc.json");
-const jsonFile = await result.json();
+async function fetcher() {
+    const result = await fetch("https://data.nasa.gov/resource/b67r-rgxc.json");
+    const jsonFile = await result.json();
+}
+
+fetcher();
+
 const planetFile = [
     { e: 0.2056, i_deg: 7.0, q_au_1: 0.3075, p_yr: 0.241 }, // Mercury
     { e: 0.0068, i_deg: 3.4, q_au_1: 0.7184, p_yr: 0.615 }, // Venus
